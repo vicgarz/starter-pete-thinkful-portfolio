@@ -1,132 +1,117 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pete Thinkful</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link href="style.css" rel="stylesheet" type="text/css">
-  </head>
-  <body>
-    <!-- Header section -->
-    <header>
-      <div class="container">
-        <h1>Pete Thinkful | Artist</h1>
-        <nav>
-          <a href="#about">About</a>
-          <a href="#portfolio">Portfolio</a>
-          <a href="#contact">Contact</a>
-        </nav>
-      </div>
-    </header>
+/* Import fonts */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Sans+Pro:wght@400&display=swap");
 
-    <main>
-      <div class="container">
-        <!-- About section -->
-        <article id="about">
-          <h2>About</h2>
+body {
+  background-color: #eae2b7;
+  color: #003049;
+  font-family: "Source Sans Pro", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 40px;
+}
 
-          <section class="about-intro">
-            <h3>Hi! I'm Pete Thinkful</h3>
-            <div class="about-wrapper">
-              <img class="image-circle" src="images/pete-thinkful.png" alt="Pete Thinkful">
-              <div class="about-text">
-                <p>I'm an artist living in Denver, Colorado.</p>
-                <p>As an artist, I'm interested in:</p>
-                <ul>
-                  <li>Producing abstract art</li>
-                  <li>Creating street graffiti art</li>
-                  <li>Connecting with like-minded artists</li>
-                </ul>
-                <p>
-                  Please feel free to take a look at my website and feel free to
-                  <a href="#contact">contact me</a>.
-                </p>
-              </div>
-            </div>
-          </section>
+/* Typography */
+h1, h2, h3, h4 {
+  font-family: "Playfair Display", Times, serif;
+  text-align: center;
+}
 
-          <section>
-            <h3>Pete's Background</h3>
-            <p>
-              After graduating college, I became an art teacher and worked with
-              beginners and professionals. I love art and my works have been
-              featured in major art galleries across the globe.
-            </p>
-            <p>
-              If you're looking to hire an artist or if you're an artist looking
-              for a collaborator for your next project, please reach out! I'm so
-              excited to work with other artists to create new art.
-            </p>
-          </section>
-        </article>
+p {
+  line-height: 1.5;
+}
 
-        <hr>
+/* Layout containers */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
 
-        <!-- Portfolio section -->
-        <article id="portfolio">
-          <h2>Portfolio</h2>
-          <section class="portfolio-projects">
-            <h3>Artworks</h3>
+/* Header */
+header {
+  padding: 20px 0;
+  background-color: #eae2b7;
+}
 
-            <section>
-              <h4>Abstract Red</h4>
-              <div>
-                <img src="images/abstract-red.png" alt="Abstract Red">
-              </div>
-              <p>
-                Vaporware wayfarers heirloom neutra disrupt. Activated charcoal
-                waistcoat scenester hell of.
-              </p>
-            </section>
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-            <section>
-              <h4>Spiral Zany</h4>
-              <div>
-                <img src="images/spiral-zany.png" alt="Spiral Zany">
-              </div>
-              <p>
-                Sriracha portland taxidermy cronut messenger bag, vegan
-                distillery. Vaporware kickstarter air plant mumblecore food truck.
-              </p>
-            </section>
+/* Navigation */
+nav a {
+  padding-left: 20px;
+  text-decoration: none;
+  color: #003049;
+  font-weight: bold;
+}
 
-            <section>
-              <h4>Melted Rainbow</h4>
-              <div>
-                <img src="images/melted-rainbow.png" alt="Melted Rainbow">
-              </div>
-              <p>
-                Edison bulb single-origin coffee snackwave, actually ennui
-                locavore shabby chic forage.
-              </p>
-            </section>
-          </section>
-        </article>
+nav a:hover {
+  color: #f77f00;
+}
 
-        <hr>
+/* Articles */
+article {
+  padding: 50px 0;
+}
 
-        <!-- Contact section -->
-        <article id="contact">
-          <h2>Contact</h2>
-          <p>
-            I'd love to hear from you! Please feel free to contact or follow me:
-          </p>
-          <ol>
-            <li><a href="">LinkedIn</a></li>
-            <li><a href="">Instagram</a></li>
-            <li><a href="">Pinterest</a></li>
-          </ol>
-        </article>
-      </div>
-    </main>
+/* Links */
+a:link {
+  color: #d62828;
+}
 
-    <!-- Footer section -->
-    <footer>
-      <div class="container">
-        <p>© Pete Thinkful. All rights reserved.</p>
-      </div>
-    </footer>
-  </body>
-</html>
+a:hover {
+  color: #f77f00;
+}
+
+/* Images */
+img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+}
+
+.image-circle {
+  border: 2px solid #003049;
+  border-radius: 50%;
+}
+
+/* About section */
+.about-wrapper {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-text {
+  text-align: left;
+}
+
+/* Portfolio section */
+.portfolio-projects {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.portfolio-projects section {
+  flex: 1;
+  padding: 10px;
+  min-width: 250px;
+}
+
+.portfolio-projects p {
+  font-size: 14px;
+}
+
+/* Horizontal rule */
+hr {
+  border: 1px solid black;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding-top: 20px;
+}
