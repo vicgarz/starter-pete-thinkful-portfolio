@@ -1,29 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pete Thinkful</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-    />
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="style.css" rel="stylesheet" type="text/css">
   </head>
   <body>
     <!-- Header section -->
     <header>
-      <h1>Pete Thinkful | Artist</h1>
-      <nav>
-        <a href="#about">About</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#contact">Contact</a>
-      </nav>
+      <div class="container">
+        <h1>Pete Thinkful | Artist</h1>
+        <nav>
+          <a href="#about">About</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
     </header>
 
     <main>
-      <div>
+      <div class="container">
         <!-- About section -->
         <article id="about">
           <h2>About</h2>
@@ -31,11 +30,7 @@
           <section class="about-intro">
             <h3>Hi! I'm Pete Thinkful</h3>
             <div class="about-wrapper">
-              <img
-                class="image-circle"
-                src="images/pete-thinkful.png"
-                alt="Pete Thinkful"
-              />
+              <img class="image-circle" src="images/pete-thinkful.png" alt="Pete Thinkful">
               <div class="about-text">
                 <p>I'm an artist living in Denver, Colorado.</p>
                 <p>As an artist, I'm interested in:</p>
@@ -67,16 +62,18 @@
           </section>
         </article>
 
-        <hr />
+        <hr>
 
         <!-- Portfolio section -->
         <article id="portfolio">
           <h2>Portfolio</h2>
           <section class="portfolio-projects">
+            <h3>Artworks</h3>
+
             <section>
-              <h3>Abstract Red</h3>
+              <h4>Abstract Red</h4>
               <div>
-                <img src="images/abstract-red.png" alt="Abstract Red" />
+                <img src="images/abstract-red.png" alt="Abstract Red">
               </div>
               <p>
                 Vaporware wayfarers heirloom neutra disrupt. Activated charcoal
@@ -85,9 +82,9 @@
             </section>
 
             <section>
-              <h3>Spiral Zany</h3>
+              <h4>Spiral Zany</h4>
               <div>
-                <img src="images/spiral-zany.png" alt="Spiral Zany" />
+                <img src="images/spiral-zany.png" alt="Spiral Zany">
               </div>
               <p>
                 Sriracha portland taxidermy cronut messenger bag, vegan
@@ -96,9 +93,9 @@
             </section>
 
             <section>
-              <h3>Melted Rainbow</h3>
+              <h4>Melted Rainbow</h4>
               <div>
-                <img src="images/melted-rainbow.png" alt="Melted Rainbow" />
+                <img src="images/melted-rainbow.png" alt="Melted Rainbow">
               </div>
               <p>
                 Edison bulb single-origin coffee snackwave, actually ennui
@@ -108,7 +105,7 @@
           </section>
         </article>
 
-        <hr />
+        <hr>
 
         <!-- Contact section -->
         <article id="contact">
@@ -117,15 +114,9 @@
             I'd love to hear from you! Please feel free to contact or follow me:
           </p>
           <ol>
-            <li>
-              <a href="">LinkedIn</a>
-            </li>
-            <li>
-              <a href="">Instagram</a>
-            </li>
-            <li>
-              <a href="">Pinterest</a>
-            </li>
+            <li><a href="">LinkedIn</a></li>
+            <li><a href="">Instagram</a></li>
+            <li><a href="">Pinterest</a></li>
           </ol>
         </article>
       </div>
@@ -133,7 +124,9 @@
 
     <!-- Footer section -->
     <footer>
-      <p>© Pete Thinkful. All rights reserved.</p>
+      <div class="container">
+        <p>© Pete Thinkful. All rights reserved.</p>
+      </div>
     </footer>
   </body>
 </html>
