@@ -1,4 +1,4 @@
-/* The @import rule below imports the Playfair Display and Source Sans Pro fonts into the stylesheet */
+/* Import fonts */
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Sans+Pro:wght@400&display=swap");
 
 body {
@@ -8,44 +8,50 @@ body {
   padding: 40px;
 }
 
-/* Headings */
-h1, h2, h3 {
+/* Typography */
+h1, h2, h3, h4 {
   font-family: "Playfair Display", Times, serif;
   text-align: center;
 }
 
+p {
+  line-height: 1.5;
+}
+
+/* Layout containers */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 /* Header */
 header {
+  padding: 20px 0;
+  background-color: #eae2b7;
+}
+
+header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
 }
 
-/* Nav links */
+/* Navigation */
 nav a {
   padding-left: 20px;
+  text-decoration: none;
+  color: #003049;
+  font-weight: bold;
 }
 
-/* Containers */
-div {
-  background-color: #eae2b7;
-  margin: auto;
-  width: 600px;
+nav a:hover {
+  color: #f77f00;
 }
 
+/* Articles */
 article {
   padding: 50px 0;
-}
-
-article div {
-  text-align: center;
-  width: 100%;
-}
-
-/* Paragraphs */
-p {
-  line-height: 1.5;
 }
 
 /* Links */
@@ -69,17 +75,7 @@ img {
   border-radius: 50%;
 }
 
-/* Footer */
-footer {
-  text-align: center;
-}
-
-/* Other page elements */
-hr {
-  border: 1px solid black;
-}
-
-/* About section redesign */
+/* About section */
 .about-wrapper {
   display: flex;
   gap: 20px;
@@ -91,18 +87,31 @@ hr {
   text-align: left;
 }
 
-/* Portfolio section layout */
+/* Portfolio section */
 .portfolio-projects {
   display: flex;
   gap: 20px;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .portfolio-projects section {
   flex: 1;
   padding: 10px;
+  min-width: 250px;
 }
 
 .portfolio-projects p {
   font-size: 14px;
+}
+
+/* Horizontal rule */
+hr {
+  border: 1px solid black;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding-top: 20px;
 }
